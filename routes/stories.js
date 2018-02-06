@@ -71,6 +71,7 @@ router.get('/user/:userId', (req, res) => {
         });
 });
 
+
 //Logged in users stories
 router.get('/my', ensureAuthenticated, (req, res) => {
     Story.find({
